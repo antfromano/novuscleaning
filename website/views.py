@@ -7,6 +7,12 @@ def home(request):
 def services(request):
     return render(request, 'services.html', {})
 
+def pricing(request):
+    return render(request, 'pricing.html', {})
+
+def blog(request):
+    return render(request, 'blog.html', {})
+
 def contact(request):
     if request.method == "POST":
         name = request.POST['name']
